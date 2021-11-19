@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".RegisterScreen">
+<TextView
+    android:id="@+id/banner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="601dp"
+    android:fontFamily="sans-serif-black"
+    android:gravity="center_horizontal"
+    android:text="SPK Motors"
+    android:textAlignment="center"
+    android:textSize="60sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0" />
+
+<TextView
+    android:id="@+id/bannerDescription"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+
+    android:layout_marginTop="20dp"
+
+    android:gravity="center_horizontal"
+    android:text="where all your needs at one stop"
+    android:textAlignment="center"
+    android:textSize="18sp"
+    android:textStyle="italic"
+    app:layout_constraintLeft_toLeftOf="parent"
+
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/banner"
+    app:layout_constraintVertical_bias="1.0" />
+
+<EditText
+    android:id="@+id/fullName"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/bannerDescription"
+    android:hint="Name"
+    android:layout_marginTop="60dp"
+    android:inputType="text"
+    android:textSize="24sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:ems="10"/>
+<EditText
+    android:id="@+id/phoneNumber"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/fullName"
+    android:hint="Mobile Number"
+    android:layout_marginTop="20dp"
+    android:inputType="number"
+    android:textSize="24sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:ems="10"/>
+<EditText
+    android:id="@+id/email"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/phoneNumber"
+    android:hint="Email address"
+    android:layout_marginTop="20dp"
+    android:inputType="textEmailAddress"
+    android:textSize="24sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:ems="10"/>
+<EditText
+    android:id="@+id/password"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/email"
+    android:hint="Password"
+    android:layout_marginTop="20dp"
+    android:inputType="textPassword"
+    android:textSize="24sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:ems="10"/>
+<Button
+    android:id="@+id/registerUser"
+    android:layout_width="380dp"
+    android:layout_height="70dp"
+    android:layout_marginTop="24dp"
+    android:backgroundTint="#0ed6b9"
+    android:textColor="#ffffff"
+    android:textSize="26sp"
+    android:textStyle="bold"
+    android:text="Register User"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/password"
+
+    />
+
+<ProgressBar
+    android:id="@+id/progressBar"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="Missing Constraints"
+
+    />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
